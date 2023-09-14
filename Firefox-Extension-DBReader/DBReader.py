@@ -24,7 +24,8 @@ db = mozidb.IndexedDB("my.sqlite")
 db_data = db.read_objects()
 
 #print(db_data)
-
+# for Export uBlock My filters List
+#print(db_data["user-filters"])
 
 data = []
 
@@ -34,6 +35,7 @@ for dict_key in db_data.keys():
 
 for dict_value in db_data.values():
 	print(dict_value)
+
 
 
 
